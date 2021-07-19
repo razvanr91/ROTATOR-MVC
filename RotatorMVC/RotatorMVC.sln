@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatorMVC", "RotatorMVC\RotatorMVC.csproj", "{87ABAA09-2309-47BA-80F6-37861D489738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87ABAA09-2309-47BA-80F6-37861D489738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87ABAA09-2309-47BA-80F6-37861D489738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87ABAA09-2309-47BA-80F6-37861D489738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87ABAA09-2309-47BA-80F6-37861D489738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {621ACE71-505E-4926-9E1B-378F7AF6CBCF}
+	EndGlobalSection
+EndGlobal
