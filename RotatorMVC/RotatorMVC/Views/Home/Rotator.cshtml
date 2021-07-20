@@ -1,0 +1,50 @@
+﻿@model RotatorMVC.Models.Palindrome
+
+@{
+    ViewData["Title"] = "App";
+}
+
+<div class="container" col-xxl-8 px-4 py-5 mt-5>
+    <div class="row gy-2 h-100 row-cols-md-2 row-cols-1">
+        <div class="col border-2 border-end text-center">
+            @*<h1 class="fw-bold lh-1 mb-3">Palindrome Check/(String Reversal)</h1>
+            <h4 class="lead">
+                Here we reverse a string and test to see if it is a palindrome as we did in the javascript exercise.
+                But this time we do it with C# using the MVC pattern.
+                Write a program that displays the reversal of an input string of characters.
+                Display the reveal in <strong style="color:green">GREEN</strong> and state whether it is a Palindrome or not.
+            </h4>*@
+
+            <img src="~/img/RotatorRotated.svg" alt="Rotator Logo" height="400" />
+            <h5>
+                Palindrome - a word, phrase or sequence that reads the same backward as forward, e.g., <span style="font-style: italic">rotator</span>.
+            </h5>
+            <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+            <p>Enter a word or sentence. Press the button and the input will be evaluated on whether it is a palindrome or not. The resulting reversal of the string will also appear.</p>
+        </div>
+        <div class="col">
+            <div>
+                <h5>Enter a string</h5>
+                @* Form goes here *@
+                <form class="row gy-2 gx-2" asp-action="Rotator" asp-controller="Home" method="post" id="form">
+                    <div class="col">
+                        <input asp-for="InputWord" class="form-control" value="@Model.InputWord" placeholder=" type a word or phrase" />
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
+                        <button id="btnSubmit" type="submit" class="btn btn-outline-danger"></button>
+                    </div>
+                </form>
+
+                <div class="row ms-0 mt-5">
+                    <div class="alert alert-danger fade show" role="alert" id="alert">
+                        <img src="~/img/RotatorRotated.svg" alt="Rotator Logo" class="img-fluid">
+                        <hr />
+                        <h5>Reverse Result : @Model.RevWord</h5>
+                        <hr>
+                        <p class="lead" id="message">@Model.Message</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
